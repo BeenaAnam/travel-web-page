@@ -1,0 +1,20 @@
+.custom-nav{
+    display: flex;
+    /* justify-content:space-around; */
+    gap: 50px;
+    color: black;
+    font-weight: bold;
+}
+.Signup{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 3px;
+}
+.hero{
+    line-height: 9rem;
+}
+.hero h1{
+    font-family: 'sans-serif';
+    font-weight: bold;
+    font-size: 4rem;
+}
