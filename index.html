@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,31 +8,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-white">
-            <div class="container-fluid">
+    <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-white fixed-top mb-0">
+            <div class="container">
                 <img src="./image/tEdmTX.png" alt="">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto text-secondary custom-nav">
+                <div class="collapse navbar-collapse custom-text mb-0" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-secondary">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Destinations</a>
+                            <a class="nav-link " aria-current="page" href="#destinations">Destinations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Hotel</a>
+                            <a class="nav-link" href="#services">Hotel</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Flights</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Bookings</a>
+                            <a class="nav-link" href="#bookings">Bookings</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Login</a>
@@ -55,62 +58,284 @@
                 </div>
             </div>
         </nav>
-        <header>
-            <div class="card float-end" style="width: 40rem;">
-                <img src="./image/Image.png" class="card-img-top" alt="...">
-            </div>
-
-
-            <div class="card mt-5 hero" style="width: 40rem; height: 30rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Best Destinations around the world
-                    </h5>
-                    <h1> Travel, enjoy <br>
-                        and live a new <br>
-                        and full life</h1>
-                    <p class="card-text"> Built Wicket longer admire do barton vanity itself do in it. Preferred to
-                        sportsmen it engrossed listening. Park gate sell they west hard for the.
-                    </p>
-                    <div class="container-fluid">
-                    <a href="#" class="btn btn-primary">Find out more</a>
-                    <a href="#" class="btn "><img src="./image/Play button.png" d-inline-flex
-                        alt="">
-                        Play Demo</a></div>
+        <!-- hero section -->
+        <header class="container my-5 mt-5 pt-5">
+            <div class="row align-items-center hero">
+                <div class="col-md-6">
+                    <h5 class="">Best Destinations around the world</h5>
+                    <h1 class="">Travel, enjoy <br> and live a new <br> and full life</h1>
+                    <p>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed
+                        listening. Park gate sell they west hard for the.</p>
+                    <a href="#" class="btn btn-primary me-3">Find out more</a>
+                    <!-- <a href="#" class="btn btn-link"><img src="./image/Play button.png" style="width: auto;"> Play Demo</a> -->
+                    <a href="#" class="btn btn-link d-inline-flex align-items-center" style="text-decoration: none;">
+                        <img src="./image/Play button.png" alt="" class="mt-3" style="width: 70px; height: 70px; ">
+                        Play Demo
+                    </a>
+                </div>
+                <div class="col-md-6 text-center mt-3">
+                    <img src="./image/Image.png" class="img-fluid" alt="Hero image">
                 </div>
             </div>
         </header>
-        
-        <div class="card-group services">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-    </div>
+        <!-- services -->
+        <section id="services" class="container my-5  text-center">
+            <p class="text-uppercase text-muted mb-1">CATEGORY</p>
+            <h1 class="mb-5 fw-bold">We Offer Best Services</h1>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <img src="./image/satellite-dish.png" alt="">
+                    <h5>Calculated Weather</h5>
+                    <p>Built Wicket longer <br> admire do barton <br> vanity itself do in it.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="image/Group 51.png" alt="" class="mb-3" style="width:60px;">
+                    <h5>Best Flights</h5>
+                    <p>Engrossed listening. <br> Park gate sell they <br> west hard for the.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="image/image 25.png" alt="">
+                    <h5>Local Events</h5>
+                    <p>Barton vanity itself do <br> in it. Prefer to men it <br> engrossed listening.</p>
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
+                <div class="col-md-3">
+                    <img src="image/Group 49.png" alt="">
+                    <h5>Customization</h5>
+                    <p>We deliver outsourced <br> aviation services <br> for military customers</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- destination -->
+        <section class="container-fluid text-center" id="destinations">
+            <p class="text-muted text-uppercase mb-1">Top Selling</p>
+            <h1 class="mb-5 fw-bold">Top Destinations</h1>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <img src="./image/Destination.png" alt="Destination 1" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="./image/Destination (1).png" alt="Destination 2" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="./image/Destination (2).png" alt="Destination 3" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <!-- Booking  -->
+        <section class="container my-5" id="bookings">
+            <div class="row align-items-center">
+                <!-- Left Side -->
+                <div class="col-md-6">
+                    <p class="text-muted mb-1">Easy and Fast</p>
+                    <h1 class="fw-bold mb-4">Book Your Next Trip<br>In 3 Easy Steps</h1>
+
+                    <!-- Step 1 -->
+                    <div class="d-flex mb-4">
+                        <img src="./image/Group 7.png" alt="Choose" class="me-3" style="width: 40px; height: 50px;">
+                        <div>
+                            <h6 class="fw-bold mb-1">Choose Destination</h6>
+                            <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                                tortor tempus.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="d-flex mb-4">
+                        <img src="./image/Group 12.png" alt="Payment" class="me-3" style="width: 40px; height: 50px;">
+                        <div>
+                            <h6 class="fw-bold mb-1">Make Payment</h6>
+                            <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                                tortor tempus.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="d-flex">
+                        <img src="./image/Group 11.png" alt="Reach Airport" class="me-3"
+                            style="width: 40px; height: 50px;">
+                        <div>
+                            <h6 class="fw-bold mb-1">Reach Airport on Selected Date</h6>
+                            <p class="mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                                tortor tempus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side (Card) -->
+                <div class="col-md-6 position-relative">
+                    <div class="card border-0 shadow" style="border-radius: 20px; overflow: hidden;">
+                        <img src="./image/Rectangle 17.jpg" alt="Trip to Greece" class="img-fluid m-4">
+                        <div class="p-3 text-start">
+                            <h6 class="fw-bold mb-0">Trip To Greece</h6>
+                            <small class="text-muted">14–29 June | by Robbin</small>
+                            <div class="d-flex align-items-center mt-2">
+                                <span class="me-3"><i class="bi bi-send"></i></span>
+                                <span class="me-3"><i class="bi bi-building"></i></span>
+                                <span class="me-2"><i class="bi bi-heart"></i></span>
+                            </div>
+                            <small class="text-muted mt-2 d-block">24 people going</small>
+                        </div>
+                    </div>
+
+                    <!-- Floating mini-card -->
+                    <div class="card position-absolute shadow p-3"
+                        style="right: -30px; bottom: -30px; width: 220px; border-radius: 15px;">
+                        <div class="d-flex align-items-center">
+                            <img src="./image/Mask Group.png" alt="Trip to Rome" class="rounded me-3"
+                                style="width: 40px; height: 40px; object-fit: cover;">
+                            <div>
+                                <p class="mb-0 fw-bold text-muted small">Ongoing</p>
+                                <p class="mb-0  text-dark small">Trip to Rome</p>
+                                <small class="text-primary">40% completed</small>
+                                <!-- Progress Bar -->
+                                <div class="progress" style="height: 6px; border-radius: 10px;">
+                                    <div class="progress-bar bg-primary" style="width: 40%; border-radius: 10px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial -->
+
+        <section class="container  section-margin-top" id="testimonial">
+
+            <div class="row align-items-center px-4 pt-5 pb-3">
+
+                <!-- Left Column -->
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <p class="text-uppercase text-muted mb-2">Testimonials</p>
+                    <h1 class="fw-bold mb-4">What People Say<br>About Us.</h1>
+                    <img src="./image/Group 61.png" alt="Decorative" class="mb-3">
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-7 position-relative">
+
+                    <!-- Foreground Testimonial Card -->
+                    <div class="card p-4 shadow border-0 position-relative"
+                        style="border-radius: 20px; max-width: 480px;">
+                        <!-- Floating Avatar -->
+                        <img src="./image/Image1.png" alt="User"
+                            class="rounded-circle border border-3 border-white position-absolute"
+                            style="top: -30px; left: -30px; width: 60px; height: 60px; object-fit: cover;">
+
+                        <!-- Testimonial Text -->
+                        <p class="text-muted mb-3 mt-4 pt-3">
+                            “On the Windows talking painted posture yet its express parties use. Sure last upon he same
+                            as knew next.
+                            Of believed or diverted no.”
+                        </p>
+                        <h6 class="mb-0 fw-bold">Mike Taylor</h6>
+                        <small class="text-muted">Lahore, Pakistan</small>
+                    </div>
+
+                    <!-- Pagination Image (bottom right of card) -->
+                    <img src="./image/Pagination.png" alt="Pagination"
+                        style="position: absolute; bottom: 20px; right: 0; width: 40px;">
+
+                    <!-- Background Card (Behind) -->
+                    <div class="card position-absolute shadow-sm p-3 bg-white border-0"
+                        style="bottom: -30px; left: 40px; width: 400px; border-radius: 15px; z-index: 0;">
+                        <h6 class="mb-0 fw-bold">Chris Thomas</h6>
+                        <small class="text-muted d-block mb-2">CEO of Red Button</small>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="our-clients w-100">
+                <div
+                    class="col-12 our-client-img mx-auto d-flex justify-content-center align-items-center gap-5 flex-wrap">
+                    <img class="img-fluid" src="./image/image 27.png" alt="clientslogos">
+                    <img class="img-fluid" src="./image/image 28.png" alt="clientslogos">
+                    <img class="img-fluid" src="./image/image 29.png" alt="clientslogos">
+                    <img class="img-fluid" src="./image/image 30.png" alt="clientslogos">
+                    <img class="img-fluid" src="./image/image 31.png" alt="clientslogos">
+                </div>
+            </div>
+        </div>
+        <!-- another div -->
+        <div class="card text-center p-4" style="border: transparent;">
+            <p class="card-text fw-bold">
+                Subscribe to get information, latest news and other <br>
+                interesting offers about Jadoo.
+            </p>
+            <div
+                class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2 mt-3 subscribe-form">
+                <input class="form-control email-input" placeholder="✉ Your Email" aria-label="Your Email" />
+                <a href="#" class="btn color-btn subscribe-btn">Subscribe</a>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer-main container">
+            <div class="row footer-content content-wrapper py-5 align-items-start">
+                <!-- Left Section -->
+                <div class="col-md-4 col-12 d-flex flex-column justify-content-between mb-4 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <h1 class="logo-text ms-2 pointor" style="font-family: sans-serif;">Jadoo.</h1>
+                    </div>
+                    <div class="copyright mt-3">
+                        <p>Book your trip in minute, get full</p>
+                        <p>Control for much longer.</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Links with tighter gap -->
+                <div class="col-md-6 col-12 d-flex justify-content-between flex-wrap gap-2">
+                    <div class="footer-nav">
+                        <h5 class="mb-2 text-dark">Company</h5>
+                        <ul class="list-unstyled">
+                            <li>About</li>
+                            <li>Careers</li>
+                            <li>Mobile</li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <h5 class="mb-2 text-dark">Contact</h5>
+                        <ul class="list-unstyled">
+                            <li>Help/FAQ</li>
+                            <li>Press</li>
+                            <li>Affiliates</li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav">
+                        <h5 class="mb-2 text-dark">More</h5>
+                        <ul class="list-unstyled">
+                            <li>Airline</li>
+                            <li>Airlinefees</li>
+                            <li>Low fare tips</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Social Icons + App Download (Right Side) -->
+                <div
+                    class="col-md-2 col-12 d-flex flex-column align-items-md-end align-items-center mt-4 mt-md-0 text-md-end text-center">
+                    <div class="social-links d-flex gap-2 mb-3">
+                        <img src="./image/Social.png" alt="Internet" style="width: 50px;">
+                        <img src="./image/Social (1).png" alt="Instagram" style="width: 50px;">
+                        <img src="./image/Social (2).png" alt="Twitter" style="width: 50px;">
+                    </div>
+                    <p class="mb-2">Discover our app</p>
+                    <div class="d-flex gap-2">
+                        <img src="./image/Google Play.png" alt="Google Play" style="width: 50px;">
+                        <img src="./image/Play Store.png" alt="App Store" style="width: 50px;">
+                    </div>
+                </div>
+            </div>
+            <p class="text-center">All rights reserved@jadoo.com</p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
