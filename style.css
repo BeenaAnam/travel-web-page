@@ -14,8 +14,8 @@ body {
 /* .custom-text ul li a {
   font-weight: 600;
 } */
-.nav-link :hover{
-  color: #df6951;
+.nav-link:hover {
+  color: #df6951 !important;
 }
 .Signup {
   border: 1px solid #000;
