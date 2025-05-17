@@ -9,11 +9,11 @@ body {
   display: flex;
   color: black;
   font-weight: bold;
-}
-.custom-text ul li a {
-  font-weight: 600;
   font-size: 17px;
 }
+/* .custom-text ul li a {
+  font-weight: 600;
+} */
 .Signup {
   border: 1px solid #000;
   border-radius: 8px;
@@ -51,6 +51,23 @@ h1 {
   text-align: center;
 }
 
+.card img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.card {
+  border: none;
+  /* width: 300px; */
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.price {
+  font-weight: bold;
+}
+.trip-info i {
+  margin-right: 6px;
+}
 .section-margin-top {
   margin-bottom: 100px;
 }
@@ -99,3 +116,18 @@ h1 {
         width: auto;
     }
 }
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 30px;
+  }
+
+  .Signup {
+    padding: 2px 8px;
+    font-size: 14px;
+  }
+
+  .custom-text {
+    font-size: 15px;
+  }
+}
+
