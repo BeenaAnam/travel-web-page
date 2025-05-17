@@ -120,6 +120,9 @@ h1 {
     }
 }
 @media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
   .navbar-brand img {
     height: 30px;
   }
